@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Abdul Aboushaar, IS117, Fall 2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News &amp; Updates | Cybersecurity Awareness Hub</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/Logo.jpg" alt="Cybersecurity Hub logo" class="logo-img me-2">
+            <span>Cybersecurity Hub</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       id="threatsDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Threats 101
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="threatsDropdown">
+                        <li><a class="dropdown-item" href="threats101.html">Threats 101 Overview</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="safe-practices.html">Safe Practices</a></li>
+                        <li><a class="dropdown-item" href="tools-resources.html">Tools &amp; Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="news.html">News &amp; Updates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-4">
+    <h1 class="mb-3">Latest Scams and Updates</h1>
+
+    <section class="content-card">
+        <h2 class="section-title">Featured Scams</h2>
+
+        <div id="featuredScamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="simple-carousel-box">
+                        <h3 class="h4">Streaming Service Phishing Emails</h3>
+                        <p>
+                            Scammers send fake messages that look like Netflix or other streaming services.
+                            They claim there is a problem with your account and push you to “update” your
+                            payment details on a fake website.
+                        </p>
+                        <a class="btn btn-primary btn-sm"
+                           href="https://www.yahoo.com/news/netflix-email-scam-warning-hackers-133923862.html"
+                           target="_blank" rel="noopener noreferrer">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="simple-carousel-box">
+                        <h3 class="h4">Fake Delivery Text Messages</h3>
+                        <p>
+                            Text messages pretend to be from delivery companies and say you missed a package
+                            or need to pay a small fee. The link goes to a fake tracking page that steals your
+                            personal and payment information.
+                        </p>
+                        <a class="btn btn-primary btn-sm"
+                           href="https://consumer.ftc.gov/consumer-alerts/2023/12/fake-shipping-notification-emails-text-messages-what-you-need-know-holiday-season"
+                           target="_blank" rel="noopener noreferrer">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Passwordless login / passkeys -->
+                <div class="carousel-item">
+                    <div class="simple-carousel-box">
+                        <h3 class="h4">Passwordless Logins and Passkeys</h3>
+                        <p>
+                            Large companies are rolling out passkeys so you can log in without passwords.
+                            Passkeys are harder to steal and can protect you from many phishing attacks.
+                        </p>
+                        <a class="btn btn-primary btn-sm"
+                           href="https://www.microsoft.com/en-us/security/blog/2025/05/01/pushing-passkeys-forward-microsofts-latest-updates-for-simpler-safer-sign-ins/"
+                           target="_blank" rel="noopener noreferrer">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#featuredScamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#featuredScamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="content-card">
+        <h2 class="section-title">This Month’s Biggest Hacks</h2>
+
+        <article class="mb-3">
+            <h3 class="h5">Streaming Service Phishing Scam</h3>
+            <p>
+                Many users reported emails that claimed their streaming account would be closed unless they
+                clicked a link. The link went to a fake site that collected account and payment details.
+            </p>
+            <a href="https://www.heise.de/en/news/Phishers-attack-Netflix-and-Disney-users-9952611.html"
+               target="_blank" rel="noopener noreferrer">
+                Learn more
+            </a>
+        </article>
+
+        <article class="mb-3">
+            <h3 class="h5">Fake Delivery Notifications</h3>
+            <p>
+                Fake shipping emails and texts are still common. They often say a package is “on hold”
+                and ask you to pay a small fee to release it, but the payment page is controlled by scammers.
+            </p>
+            <a href="https://consumer.ftc.gov/consumer-alerts/2023/12/fake-shipping-notification-emails-text-messages-what-you-need-know-holiday-season"
+               target="_blank" rel="noopener noreferrer">
+                Learn more
+            </a>
+        </article>
+
+        <article>
+            <h3 class="h5">New Focus on Passkeys</h3>
+            <p>
+                Some companies are promoting passkeys and other passwordless options. These methods link
+                your login to your device and make it harder for attackers to reuse stolen passwords.
+            </p>
+            <a href="https://www.microsoft.com/en-us/security/blog/2025/05/01/pushing-passkeys-forward-microsofts-latest-updates-for-simpler-safer-sign-ins/"
+               target="_blank" rel="noopener noreferrer">
+                Learn more
+            </a>
+        </article>
+    </section>
+</main>
+
+<footer class="bg-dark text-light py-3 mt-5 site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-2 mb-md-0 d-flex align-items-center">
+            <img src="images/Logo.jpg" alt="Cybersecurity Hub logo" class="logo-img me-2">
+            <span class="fw-semibold">Cybersecurity Hub</span>
+        </div>
+        <div class="mb-2 mb-md-0">
+            <a href="terms.html" class="text-decoration-none text-light me-3">Terms &amp; Service</a>
+            <a href="privacy.html" class="text-decoration-none text-light">Privacy Statement</a>
+        </div>
+        <div>
+            Copyright &copy; Abdul Aboushaar 2025
+        </div>
+    </div>
+</footer>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
